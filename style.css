@@ -1,0 +1,271 @@
+/* 
+Font for headings: Playfair Display
+Font for others: Cormorant Garamond 
+You can find both of these fonts at Google fonts
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5;
+  background-image: linear-gradient(rgb(19, 12, 115) 1%, rgb(213, 209, 240) 10%, rgb(255, 255, 255) 89%);
+}
+
+header {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #333333;
+}
+
+header {
+  background: #ffffff;
+}
+
+nav {
+  padding: 1% 0 1% 0;
+
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+}
+
+nav>ul>li,
+nav>ul>li>a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.mobile-view {
+  display: block;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li,
+#hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-image {
+  max-width: 1100px;
+  margin: auto;
+  background-image: url("images/top-ballet.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0% 26%;
+  height: 90vh;
+}
+
+#hero-image>h2 {
+  color: #ffffff;
+  margin: 0 3% 0 3%;
+  font-weight: 400;
+}
+
+#social-media>h2 {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#information-cards>#article-area>article>.heading-absolute>img,
+#news>article>img {
+  width: 100%;
+}
+
+#article-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+#information-cards {
+  padding-bottom: 50px;
+}
+
+#information-cards>h2,
+#news>h2,
+.heading-absolute>div {
+  text-align: center;
+}
+
+.heading-absolute {
+  position: relative;
+}
+
+.heading-absolute>div {
+  background-color: rgba(255, 255, 255, .6);
+  position: absolute;
+  color: #000000;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#information-cards>#article-area>article {
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#information-cards>#article-area>article>.company-name {
+  margin-top: 0;
+  text-align: center
+}
+
+#information-cards>#article-area>article>.company-details {
+  margin: 0 3% 0 3%;
+
+}
+
+#news {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin: 0 2% 10% 2%;
+}
+
+#follow {
+  display: none;
+}
+
+#vote,
+#social-media {
+  text-align: center;
+}
+
+.news-heading {
+  text-align: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 15px;
+}
+
+#social-media>ul>li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#social-media>ul>li>a {
+  color: rgb(19, 12, 115);
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  #article-area,
+  #news {
+    margin: 0 2% 0 2%;
+  }
+
+  .mobile-view {
+    display: grid;
+    grid-template-columns: 8fr 0.5fr 0.5fr;
+  }
+
+  #article-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  #news {
+    background: rgb(213, 209, 240);
+    padding: 3% 10% 3% 10%;
+    border-bottom: 0px;
+  }
+
+  #social-media>h2 {
+    display: block;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    background-image: linear-gradient(rgb(19, 12, 115) 1%, rgb(213, 209, 240) 20%, rgb(255, 255, 255) 40%);
+  }
+
+
+  #body-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 8fr 2fr;
+  }
+
+  #hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #news {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .mobile-view {
+    display: block;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+
+  nav>ul>li:first-child {
+    height: 70vh;
+  }
+
+  #social-media>h2 {
+    display: block;
+  }
+
+
+}
+
+/* Colours
+Main dark purplish blue colour: rgb(19, 12, 115)
+Lighter purple colour: rgb(213, 209, 240)
+For any other sections, you can select the colour that is close to the colours found on screenshots.  */
